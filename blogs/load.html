@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Nobita and Shizuka</title>
+    <style>
+        body {
+            background-color: #0B0E1F;
+            color: #d6d6d6;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font-size: 5em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2em;
+        }
+
+        img {
+            align-self: center;
+        }
+
+        #comments-container {
+            margin-bottom: 20px;
+        }
+
+        #comment-form {
+            margin-top: 20px;
+        }
+
+        textarea {
+            font-size: 1em;
+            width: 100%;
+            height: 80px;
+            resize: none;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nobita and Shizuka? A strange relationship.</h1>
+    <p>
+        Nobita Nobi has a huge crush on his best friend and far Neighbor Shizuka Minamoto. Nobita has a romantic
+        daydream about her, usually when he planning something on Shizuka, and hopes one day he would marry her. He
+        tried his best to impress her with Doraemon gadget though, but usually his efforts was either dwarfed by
+        Dekisugi just being close to Shizuka, or Gian and Suneo 'sabotaging' his plans. If he did managed to get Shizuka
+        to be impressed, it didn't last long because of Suneo's and/or Gian's interferences or accidents he got,
+        resulting in Shizuka fuming, or Doraemon scolding Nobita for going too far. Despite his chaotic efforts, he
+        still somehow manages to marry Shizuka and have a son named Nobisuke Nobi Jr. </p>
+    <br><br>
+    <p>Shizuka on the other hand, secretly has a crush on Nobita. She starts off with a regular friendship, but
+        eventually drew closer to him, and slowly developed a crush on him. This was seen in a movie "Doraemon: Nobita's
+        Three Visionary Swordsmen", where Shizuka dreamed she was Princess Shizuka, married Nobita, and the person whom
+        she dreamed of turned out was Silver Knight Nobitania. Nobita never tells his feelings to Shizuka and neither
+        did Shizuka was shown doing the same to him. </p>
+    <img src="nobitaandshizuka.jpg" alt="nobita and shizuka">
+
+    <div id="like-counter">
+        <button onclick="incrementLikes()">👍 Like</button>
+        <span id="like-count">0</span>
+    </div>
+
+    <div id="comments-container">
+    </div>
+
+    <div id="comment-form">
+        <textarea id="comment-text" placeholder="Add your comment..."></textarea>
+        <button onclick="postComment()">Post Comment</button>
+    </div>
+
+    <script src="comments.js"></script>
+</body>
+
+</html>
